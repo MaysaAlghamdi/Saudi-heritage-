@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="Images/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saudi Heritage</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- Header  and logo -->
+  <div class="header">
+    <div class="title">Explore Saudi Heritage</div>
+    <img src="Images/logo.png" alt="Logo" class="logo" />
+  </div>
+
+  
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="menu-title">
+        CONTENT MENU
+        <span class="lock-icon" id="lockIcon" onclick="toggleLock()">⯅</span>
+      </div>
+      <!-- Dropdown Content -->
+      <div class="dropdown-content">
+        <!-- Diriyah -->
+        <div class="category">
+          <button onclick="toggleTopics('category1Topics')" class="categorybtn">GET TO KNOW DIRIYAH</button>
+          <div id="category1Topics" class="topics">
+            <a href="#" onclick="showYoutube('https://www.youtube.com/embed/z_THy2FptGo')">Intro to Diriyah</a>
+            <a href="#" onclick="showYoutube('https://www.youtube.com/embed/uJxEvR6wXv8?si=EgKbzAnkVvQ8DOgu')">Heritage of Diriyah</a>
+            <a href="#" onclick="showQuiz('diriyah')">Diriyah Quiz</a>
+          </div>
+        </div>
+
+        <!-- AlUla -->
+        <div class="category">
+          <button onclick="toggleTopics('category2Topics')" class="categorybtn">EXPLORE ALULA</button>
+          <div id="category2Topics" class="topics">
+            <a href="#" onclick="showYoutube('https://www.youtube.com/embed/L1gYEUWn-8I?si=Mmpvznl5v8BpW6GR')">History of AlUla</a>
+            <a href="#" onclick="showYoutube('https://www.youtube.com/embed/_52stCX6JgM?si=mewwLrJIeTlYUj_t')">Nature in AlUla</a>
+            <a href="#" onclick="showQuiz('alula')">AlUla Quiz</a>
+          </div>
+        </div>
+
+        <!-- Al-Balad -->
+        <div class="category">
+          <button onclick="toggleTopics('category3Topics')" class="categorybtn">DISCOVER AL-BALAD</button>
+          <div id="category3Topics" class="topics">
+            <a href="#" onclick="showYoutube('https://www.youtube.com/embed/9dTyE3rOCPg?si=E6V5cKa1T4l0VTHP')">Al-Balad Culture</a>
+            <a href="#" onclick="showYoutube('https://www.youtube.com/embed/rf4xT41svBY?si=BPPE0ld9MXNc5rlp')">Historic Architecture</a>
+            <a href="#" onclick="showQuiz('albalad')">Al-Balad Quiz</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Button -->
+      <div class="map-control-buttons">
+        <button onclick="showMap()">View Locations</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+
+      <!-- Welcome Screen -->
+      <div id="welcomeScreen">
+        <h2>Welcome to Saudi Heritage Explorer</h2>
+        <p>
+          Saudi Arabia is a land of rich culture, timeless traditions, and breathtaking historic sites.
+          From the birth of ancient civilizations to the flourishing of trade, architecture, and community,
+          the Kingdom has always stood as a crossroads of cultures and a beacon of heritage.
+        </p>
+        <p>
+          This platform is dedicated to celebrating the stories embedded in the stones of Diriyah,
+          the carved tombs of AlUla, and the timeless streets of Al-Balad.
+          Each location reflects a unique era and identity that shaped the nation's soul.
+        </p>
+        <p>
+          Through this experience, we invite you to step into the past, understand its impact on the present,
+          and appreciate the preservation of heritage that continues to inspire generations.
+          Let the journey through Saudi history enrich your knowledge and deepen your cultural connection.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
