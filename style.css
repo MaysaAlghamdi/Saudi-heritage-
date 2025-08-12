@@ -290,7 +290,7 @@ body {
 /*  Welcome Screen */
 #welcomeScreen {
   text-align: center;
-  padding: 150px 80px;
+  padding: 125px 80px;
   background: linear-gradient(135deg, rgba(181, 167, 149, 0.15) 0%, rgba(191, 177, 159, 0.2) 50%, rgba(181, 167, 149, 0.15) 100%);
   border-radius: 25px;
   box-shadow: 
@@ -331,14 +331,24 @@ body {
 }
 
 #welcomeScreen h2 {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 30px;
-  color: #2a1a0a;
+  color: #43311f;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   font-weight: bold;
   position: relative;
   z-index: 2;
   letter-spacing: 1px;
+  text-align: center;
+}
+
+#welcomeScreen h2 .main-title {
+  font-size: 38px;
+  display: block;
+  margin-top: 10px;
+  font-weight: 900;
+  color: #3a2a1a;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #welcomeScreen p {
@@ -436,6 +446,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: left;
   box-shadow: 
     0 3px 10px rgba(0, 0, 0, 0.15),
     0 1px 5px rgba(0, 0, 0, 0.1);
